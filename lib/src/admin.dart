@@ -13,6 +13,7 @@ import 'bindings.dart' as js;
 class FirebaseAdmin {
   final js.FirebaseAdmin _admin;
   final Map<String, App> _apps = new Map();
+  Map<String, App> get apps => _apps;
 
   static FirebaseAdmin get instance => _instance ??= new FirebaseAdmin._();
   static FirebaseAdmin _instance;
